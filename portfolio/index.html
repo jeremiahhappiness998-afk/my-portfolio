@@ -135,6 +135,7 @@
             background: linear-gradient(135deg, #004cff55, #7a00ff55);
             transform: scale(1.12);
         }
+        
 
         /* Contact Form */
         input, textarea {
@@ -173,6 +174,12 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        /* TYPING name animation */
+    .typed{font-weight:800;color:var(--accent);display:inline-block;white-space:nowrap;overflow:hidden;border-right:0px solid rgba(124,58,237,0.9);animation:typing 3.6s steps(22),blink .7s infinite}
+    @keyframes typing{0%{width:0}60%{width:12ch}100%{width:12ch}}
+    @keyframes blink{50%{border-color:transparent}}
+
     </style>
 </head>
 <body>
@@ -186,6 +193,13 @@
         <p>Web Developer • Designer • Software Developer</p>
         <a class="button" href="jeremiah_happiness_myjobmag.pdf" download>Download CV</a>
     </header>
+
+     <main class="main">
+      <section class="hero" id="about">
+        <div class="blob" aria-hidden></div>
+        <div class="hero-grid">
+          <div class="intro">
+            <h2><span class="typed">Jeremiah</span></h2>
 
     <section id="about" class="fade">
         <h2>About Me</h2>
@@ -211,6 +225,26 @@
             <span>Git & GitHub</span>
             <span>C++</span>
         </div>
+        <div style="width:320px;display:flex;flex-direction:column;gap:12px;text-align: left;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:12px;border-radius:12px">
+            
+                        
+            <div class="skills" aria-hidden>
+              <div class="line">HTML • CSS • JavaScript • React • Animation • UX • Motion • Accessibility • SVG • Canvas •&nbsp;&nbsp;</div>
+            </div>
+
+            <div style="background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:12px;border-radius:12px;background-position: center;">
+              <div style="font-weight:800">Top skills</div>
+              <div class="skill">HTML<div class="bar"><i style="width:95%"></i></div></div>
+              <div class="skill">CSS<div class="bar"><i style="width:90%"></i></div></div>
+              <div class="skill">JavaScript<div class="bar"><i style="width:88%"></i></div></div>
+              <div class="skill">C Programming<div class="bar"><i style="width:90%"></i></div></div>
+              <div class="skill">C++  <div class="bar"><i style="width:90%"></i></div></div>
+              <div class="skill">PYTHON<div class="bar"><i style="width:90%"></i></div></div>
+              <div class="skill">SQL  <div class="bar"><i style="width:90%"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <section id="projects" class="fade">
@@ -264,4 +298,16 @@
     </footer>
 
 </body>
+<script>
+    // 1. Typing animation control (already CSS-driven). Make it cycle names (demo: Jeremiah -> Creator)
+    const typed = document.querySelector('.typed');
+    const words = ['Hello — I am','Jeremiah','Creator','Animator','Developer'];
+    let wi=0,ci=0;
+    function cycle(){
+      typed.textContent = words[wi].slice(0,ci);
+      ci++;
+      if(ci>words[wi].length){setTimeout(()=>{wi=(wi+1)%words.length;ci=0;cycle()},800)} else setTimeout(cycle,90)
+    }
+    cycle();
+    </script>
 </html>
