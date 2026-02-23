@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jeremiahhappiness.vercel.app/sitemap.xml
