@@ -4,247 +4,335 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO essential meta tags -->
-  <title>HAPPINESS GODKNOWS JEREMAH · Web Developer</title>
-  <meta name="description" content="HAPPINESS GODKNOWS JEREMAH – professional web developer specializing in HTML, CSS, JavaScript, Python, Flask and SQL. View portfolio and get in touch.">
-  <meta name="keywords" content="HAPPINESS GODKNOWS JEREMAH, web developer, portfolio, HTML, CSS, JavaScript, Python, Flask, SQL, Bootstrap">
-  <meta name="author" content="HAPPINESS GODKNOWS JEREMAH">
+  <!-- SEO essential meta tags (updated) -->
+  <title>HAPPINESS GODKNOWS JEREMIAH · Fullstack Engineer</title>
+  <meta name="description" content="HAPPINESS GODKNOWS JEREMIAH – Nigeria-based Fullstack Engineer specializing in Python, JavaScript, Flask, SQL. View portfolio and get in touch.">
+  <meta name="keywords" content="HAPPINESS GODKNOWS JEREMIAH, fullstack engineer, web developer, portfolio, Python, Flask, JavaScript, SQL, Nigeria">
+  <meta name="author" content="HAPPINESS GODKNOWS JEREMIAH">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph / social sharing -->
-  <meta property="og:title" content="HAPPINESS GODKNOWS JEREMAH · Web Developer">
-  <meta property="og:description" content="Professional portfolio – modern web development with Python, Flask and front-end skills.">
+  <!-- Open Graph / social sharing (updated) -->
+  <meta property="og:title" content="HAPPINESS GODKNOWS JEREMIAH · Fullstack Engineer">
+  <meta property="og:description" content="Nigeria-based Fullstack Engineer – modern web development with Python, Flask, and JavaScript.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourdomain.com">   <!-- replace with your actual URL when deployed -->
-  <meta property="og:image" content="https://placehold.co/1200x630/0d6efd/white?text=Happiness+Jeremiah">
-  <meta property="og:image:alt" content="HAPPINESS GODKNOWS JEREMAH portfolio banner">
+  <meta property="og:url" content="https://jeremiahhappiness.vercel.app">
+  <meta property="og:image" content="https://placehold.co/1200x630/1e293b/ffffff?text=Happiness+Jeremiah">
+  <meta property="og:image:alt" content="HAPPINESS GODKNOWS JEREMIAH portfolio banner">
 
-  <!-- Twitter card (optional but good for SEO) -->
+  <!-- Twitter card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HAPPINESS GODKNOWS JEREMAH · Web Developer">
-  <meta name="twitter:description" content="Check out my work as a web developer – HTML, CSS, JS, Python, Flask, SQL.">
-  <meta name="twitter:image" content="https://placehold.co/1200x600/0d6efd/white?text=Happiness+Jeremiah">
+  <meta name="twitter:title" content="HAPPINESS GODKNOWS JEREMIAH · Fullstack Engineer">
+  <meta name="twitter:description" content="Check out my work as a fullstack engineer – Python, Flask, JS, SQL.">
+  <meta name="twitter:image" content="https://placehold.co/1200x600/1e293b/ffffff?text=Happiness+Jeremiah">
 
   <!-- Bootstrap 5 + Font Awesome 6 (CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="https://placehold.co/200x200/1e293b/ffffff?text=H+J" type="image/x-icon">
 
-  <!-- Custom styles for professional UI (inspired by modern tech portfolios) -->
+  <!-- Google Fonts for a clean, modern look (similar to the reference) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      background-color: #f8fafc;
-      color: #1e293b;
+      font-family: "Inter", system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background-color: #0a0c10; /* deep dark background from reference */
+      color: #e9edf0;
       scroll-behavior: smooth;
+      line-height: 1.6;
     }
-    h1, h2, h3, h4 {
+
+    h1, h2, h3, h4, h5 {
       font-weight: 600;
       letter-spacing: -0.02em;
+      color: #ffffff;
     }
+
     .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      color: #ffffff;
       position: relative;
       display: inline-block;
     }
+    /* small accent line */
     .section-title::after {
       content: '';
       position: absolute;
       bottom: -10px;
       left: 0;
-      width: 70px;
-      height: 4px;
-      background: linear-gradient(90deg, #0d6efd, #20c997);
-      border-radius: 4px;
+      width: 60px;
+      height: 3px;
+      background: #3b82f6; /* blue accent */
+      border-radius: 2px;
     }
-    /* navbar */
+
+    /* navbar - dark transparent */
     .navbar {
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(10, 12, 16, 0.95);
       backdrop-filter: blur(10px);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+      border-bottom: 1px solid #2a2f36;
     }
     .navbar-brand {
       font-weight: 700;
-      color: #0a1929;
+      color: #ffffff !important;
+      font-size: 1.8rem;
+      letter-spacing: -0.5px;
+    }
+    .navbar-brand span {
+      color: #3b82f6;
     }
     .nav-link {
       font-weight: 500;
-      color: #1e293b !important;
+      color: #b0b8c5 !important;
       margin: 0 0.25rem;
       transition: 0.2s;
     }
     .nav-link:hover {
-      color: #0d6efd !important;
+      color: #ffffff !important;
     }
-    /* hero */
+
+    /* hero section */
     .hero {
       padding: 140px 0 100px;
-      background: linear-gradient(145deg, #ffffff 0%, #f1f5f9 100%);
+      background: #0a0c10;
     }
-    .hero-name {
-      font-size: 3.5rem;
+    .hero-name-line {
+      font-size: 4rem;
       font-weight: 700;
-      color: #0a1929;
-      margin-bottom: 0.5rem;
+      line-height: 1.1;
+      color: #ffffff;
     }
-    .hero-tagline {
-      font-size: 1.75rem;
+    .hero-name-line small {
+      font-size: 1.2rem;
       font-weight: 400;
-      color: #334155;
-      border-left: 5px solid #0d6efd;
+      color: #9aa4b8;
+      display: block;
+      margin-top: 0.5rem;
+    }
+    .hero-location {
+      font-size: 1.3rem;
+      color: #b0b8c5;
+      margin-top: 1rem;
+      border-left: 4px solid #3b82f6;
       padding-left: 1rem;
     }
-    .btn-gradient {
-      background: linear-gradient(135deg, #0d6efd, #20c997);
-      color: white;
-      border: none;
-      padding: 0.75rem 2rem;
-      border-radius: 40px;
-      font-weight: 600;
-      box-shadow: 0 10px 20px -10px #0d6efd;
-      transition: all 0.3s;
+
+    /* card / panel style */
+    .info-card {
+      background: #13171d;
+      border: 1px solid #2a2f36;
+      border-radius: 24px;
+      padding: 2rem;
+      box-shadow: 0 20px 35px -8px rgba(0,0,0,0.7);
+      transition: transform 0.2s;
+      height: 100%;
     }
-    .btn-gradient:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 20px 30px -10px #0d6efd;
-      color: white;
+    .info-card:hover {
+      transform: translateY(-5px);
+      border-color: #3b82f6;
     }
-    /* skill pills */
-    .skill-pill {
-      background: white;
-      border: 1px solid #e2e8f0;
-      padding: 0.6rem 1.5rem;
+
+    .skill-tag {
+      background: #1e252d;
+      color: #e9edf0;
+      padding: 0.5rem 1.2rem;
       border-radius: 40px;
       font-weight: 500;
-      box-shadow: 0 4px 6px -2px rgba(0,0,0,0.05);
-      transition: 0.2s;
-      display: inline-block;
+      border: 1px solid #2f3a46;
       margin: 0.25rem;
+      display: inline-block;
     }
-    .skill-pill:hover {
-      border-color: #0d6efd;
-      background: #f0f7ff;
+
+    /* progress bar skills (like reference) */
+    .skill-progress-item {
+      margin-bottom: 1.8rem;
     }
+    .skill-progress-item .skill-label {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+      color: #cfd8e6;
+    }
+    .progress {
+      height: 8px;
+      background-color: #1e252d;
+      border-radius: 20px;
+    }
+    .progress-bar {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      border-radius: 20px;
+    }
+
     /* project cards */
     .project-card {
-      border: none;
+      background: #13171d;
+      border: 1px solid #2a2f36;
       border-radius: 24px;
-      background: white;
-      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.05);
-      transition: transform 0.25s, box-shadow 0.3s;
       overflow: hidden;
+      transition: all 0.3s;
+      height: 100%;
     }
     .project-card:hover {
+      border-color: #3b82f6;
       transform: scale(1.02);
-      box-shadow: 0 30px 40px -12px rgba(13,110,253,0.2);
+      box-shadow: 0 20px 30px -10px #1e293b;
     }
-    .card-img-top {
-      height: 220px;
+    .project-card img {
+      height: 200px;
       object-fit: cover;
+      border-bottom: 1px solid #2a2f36;
     }
+    .project-card .card-body {
+      padding: 1.8rem;
+    }
+    .project-card .card-title {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    .project-card .btn-outline-primary {
+      border-color: #3b82f6;
+      color: #3b82f6;
+      border-radius: 40px;
+      padding: 0.5rem 1.5rem;
+    }
+    .project-card .btn-outline-primary:hover {
+      background: #3b82f6;
+      color: #0a0c10;
+    }
+
     /* contact form */
     .form-control, .form-floating>label {
+      background-color: #1e252d;
+      border: 1px solid #2f3a46;
       border-radius: 16px;
-      border: 1px solid #dde7f0;
+      color: #e9edf0;
       padding: 1rem 1.2rem;
     }
     .form-control:focus {
-      box-shadow: 0 0 0 4px rgba(13,110,253,0.1);
-      border-color: #0d6efd;
+      background-color: #262f3a;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.3);
+      color: #ffffff;
     }
-    .contact-info a {
-      color: #1e293b;
-      text-decoration: none;
+    .form-label {
+      color: #b0b8c5;
       font-weight: 500;
-      transition: color 0.2s;
     }
-    .contact-info a:hover {
-      color: #0d6efd;
+    .btn-primary-custom {
+      background: #3b82f6;
+      border: none;
+      padding: 0.9rem 2rem;
+      border-radius: 40px;
+      font-weight: 600;
+      width: 100%;
+      color: #ffffff;
+      transition: 0.2s;
     }
+    .btn-primary-custom:hover {
+      background: #2563eb;
+    }
+
     .social-icon {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 48px;
-      height: 48px;
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
-      background: #f1f5f9;
-      color: #1e293b;
-      font-size: 1.3rem;
-      transition: all 0.2s;
-      margin-right: 0.5rem;
+      background: #1e252d;
+      color: #b0b8c5;
+      font-size: 1.5rem;
+      transition: 0.2s;
+      margin-right: 0.6rem;
+      margin-bottom: 0.6rem;
+      border: 1px solid #2f3a46;
     }
     .social-icon:hover {
-      background: #0d6efd;
-      color: white;
+      background: #3b82f6;
+      color: #0a0c10;
       transform: translateY(-4px);
+      border-color: #3b82f6;
     }
-    /* whatsapp floating button */
+
     .whatsapp-float {
       position: fixed;
       bottom: 30px;
       right: 30px;
       background: #25d366;
-      color: white;
+      color: #0a0c10;
       width: 64px;
       height: 64px;
       border-radius: 50%;
-      text-align: center;
-      font-size: 2.2rem;
-      box-shadow: 0 10px 20px rgba(37,211,102,0.3);
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 2.2rem;
+      box-shadow: 0 10px 25px rgba(37,211,102,0.25);
       transition: 0.3s;
       z-index: 99;
     }
     .whatsapp-float:hover {
       background: #20b859;
-      color: white;
+      color: #ffffff;
       transform: scale(1.1);
     }
+
     footer {
-      background: #0a1929;
-      color: #b0c4de;
+      background: #0a0c10;
+      border-top: 1px solid #2a2f36;
+      color: #9aa4b8;
     }
     .footer-link {
-      color: #b0c4de;
+      color: #9aa4b8;
       text-decoration: none;
       margin: 0 10px;
     }
     .footer-link:hover {
-      color: white;
+      color: #ffffff;
     }
-    /* alert message */
+
     .alert-success-custom {
-      background: #d1fae5;
-      border: 1px solid #a7f3d0;
-      border-radius: 20px;
-      color: #065f46;
-      padding: 0.8rem 1.2rem;
-      font-weight: 500;
+      background: #1a2e3a;
+      border: 1px solid #2563eb;
+      color: #b4e6f0;
+      border-radius: 40px;
+      padding: 1rem;
+    }
+
+    /* misc */
+    .text-accent {
+      color: #3b82f6;
+    }
+    .bg-dark-card {
+      background: #13171d;
+      border: 1px solid #2a2f36;
+      border-radius: 24px;
+    }
+    hr {
+      border-color: #2a2f36;
     }
   </style>
-  <!-- sitemap & robots placeholder (create actual files when deploying) -->
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-  <meta name="robots" content="index,follow">
-  <!-- you can create a robots.txt file with:
-       User-agent: *
-       Allow: /
-  -->
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
 </head>
 <body>
+
   <!-- navigation -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#home">H<span style="color:#0d6efd;">.</span>J</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="#home">H<span>.</span>J</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border-color: #3b82f6;">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
@@ -258,112 +346,151 @@
     </div>
   </nav>
 
-  <!-- HERO / HOME -->
+  <!-- HERO (inspired by reference) -->
   <section id="home" class="hero">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-8">
-          <p class="text-primary fw-semibold mb-2">👋 Hi, I'm</p>
-          <h1 class="hero-name">HAPPINESS GODKNOWS JEREMAH</h1>
-          <h2 class="hero-tagline">WEB DEVELOPER</h2>
-          <p class="lead text-secondary my-4">I build modern, fast, and user-friendly web experiences. Skilled in front-end & back-end technologies.</p>
-          <a href="#contact" class="btn btn-gradient me-3">📬 Hire me</a>
-          <a href="#projects" class="btn btn-outline-secondary rounded-pill px-4">View work</a>
-        <a href="https://cs50.harvard.edu/certificates/010819bb-3ddd-4bf7-95bc-90692935c661" class="btn btn-outline-secondary rounded-pill px-4">Download My "HARVARD CS50" Certificate</a>
-
-        </div>
-        <div class="col-lg-4 text-center mt-4 mt-lg-0">
-          <!-- optional avatar/illustration (placeholder) -->
-          <img src="https://placehold.co/300x300/0d6efd/white?text=HAPPINESS+JEREMIAH" alt="Happiness Jeremiah" class="img-fluid rounded-circle border border-4 border-white shadow" style="max-width: 260px;">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="py-5" style="background: white;">
-    <div class="container py-5">
-      <h2 class="section-title">About me</h2>
-      <div class="row g-4">
-        <div class="col-lg-8">
-          <p class="fs-5 text-secondary">I'm a web developer with a passion for creating clean, responsive, and performant websites. I started my journey with front-end basics and quickly expanded into back-end with Python and Flask. I enjoy solving problems and turning ideas into code.</p>
-          <p class="fs-5 text-secondary">Currently I'm deepening my knowledge in full‑stack development and modern JavaScript. I'm open to freelance projects and full‑time opportunities.</p>
+          <div class="hero-name-line">
+            Happiness<br>Godknows<br>Jeremiah
+            <small>Fullstack Engineer</small>
+          </div>
+          <p class="hero-location">Nigeria-based · Remote</p>
           <div class="mt-4">
-            <span class="fw-bold me-2">⚡ Core values:</span> 
-            <span class="badge bg-light text-dark me-2">clean code</span>
-            <span class="badge bg-light text-dark me-2">responsive design</span>
-            <span class="badge bg-light text-dark me-2">user first</span>
+            <a href="#contact" class="btn btn-primary-custom me-3" style="width: auto; display: inline-block; padding: 0.9rem 2.5rem;">📬 Hire me</a>
+            <a href="#projects" class="btn btn-outline-secondary rounded-pill px-4 py-2" style="border-color: #3b82f6; color: #3b82f6;">View work</a>
+            <a href="https://cs50.harvard.edu/certificates/010819bb-3ddd-4bf7-95bc-90692935c661" class="btn btn-outline-secondary rounded-pill px-4 py-2 mt-2 mt-sm-0" style="border-color: #3b82f6; color: #3b82f6; margin-left: 0.5rem;">📜 CS50 Cert</a>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="bg-light p-4 rounded-4 shadow-sm">
-            <h5 class="mb-3"><i class="fa-regular fa-face-smile text-primary me-2"></i> Quick info</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2"><i class="fa-regular fa-envelope me-2 text-secondary"></i> jeremiahhappiness998@gmail.com</li>
-              <li class="mb-2"><i class="fa-solid fa-location-dot me-2 text-secondary"></i> based in Nigeria / remote</li>
-              <li class="mb-2"><i class="fa-regular fa-clock me-2 text-secondary"></i> 5+ Months building/Learning</li>
-            </ul>
+        <div class="col-lg-4 text-center mt-5 mt-lg-0">
+          <img src="https://placehold.co/300x300/1e293b/ffffff?text=H+J" alt="Happiness Jeremiah" class="img-fluid rounded-circle border border-3" style="border-color: #3b82f6 !important; max-width: 260px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + quick stats (card style) -->
+  <section id="about" class="py-5" style="background: #0a0c10;">
+    <div class="container py-4">
+      <h2 class="section-title">About Me</h2>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="info-card">
+            <h4 class="mb-3">A Passionate Developer Who Loves to Code</h4>
+            <p class="text-secondary" style="color: #b0b8c5 !important;">I'm a dedicated fullstack engineer with experience building web applications that make a difference. My passion for coding drives me to continuously learn and implement cutting-edge technologies while maintaining a focus on clean, maintainable code and exceptional user experiences.</p>
+            <hr>
+            <div class="row mt-4">
+              <div class="col-sm-6"><i class="fa-regular fa-user me-2 text-accent"></i> <strong>Name:</strong> Happiness G. Jeremiah</div>
+              <div class="col-sm-6"><i class="fa-regular fa-envelope me-2 text-accent"></i> <strong>Email:</strong> jeremiahhappiness998@gmail.com</div>
+              <div class="col-sm-6 mt-3"><i class="fa-solid fa-location-dot me-2 text-accent"></i> <strong>Address:</strong> Ajaokuta Road, Lokoja</div>
+              <div class="col-sm-6 mt-3"><i class="fa-regular fa-calendar me-2 text-accent"></i> <strong>Freelance:</strong> Available</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="info-card d-flex flex-column justify-content-center">
+            <h3 class="mb-4">Quick Stats</h3>
+            <div class="d-flex justify-content-around text-center">
+              <div><span class="fs-1 fw-bold text-accent">5+</span><br>Months building</div>
+              <div><span class="fs-1 fw-bold text-accent">10+</span><br>Projects</div>
+              <div><span class="fs-1 fw-bold text-accent">∞</span><br>Curiosity</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS (with the exact list) -->
-  <section id="skills" class="py-5" style="background: #f1f5f9;">
+  <!-- SKILLS with progress bars (like reference) -->
+  <section id="skills" class="py-5" style="background: #0f1217;">
     <div class="container py-4">
-      <h2 class="section-title">Technical skills</h2>
-      <div class="row">
-        <div class="col-12">
-          <div class="d-flex flex-wrap gap-2">
-            <span class="skill-pill"><i class="fa-brands fa-html5 text-danger me-2"></i>HTML</span>
-            <span class="skill-pill"><i class="fa-brands fa-css3-alt text-primary me-2"></i>CSS</span>
-            <span class="skill-pill"><i class="fa-brands fa-js text-warning me-2"></i>JavaScript (Beginner)</span>
-            <span class="skill-pill"><i class="fa-brands fa-python text-info me-2"></i>Python</span>
-            <span class="skill-pill"><i class="fa-solid fa-flask text-secondary me-2"></i>Flask</span>
-            <span class="skill-pill"><i class="fa-solid fa-database me-2"></i>SQL</span>
-            <span class="skill-pill"><i class="fa-brands fa-bootstrap text-primary me-2"></i>Bootstrap</span>
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="mb-5" style="color: #b0b8c5;">I work hard to improve my skills regularly.</p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="skill-progress-item">
+            <div class="skill-label"><span>Python</span> <span>50%</span></div>
+            <div class="progress"><div class="progress-bar" style="width:50%"></div></div>
+          </div>
+          <div class="skill-progress-item">
+            <div class="skill-label"><span>HTML</span> <span>75%</span></div>
+            <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
+          </div>
+          <div class="skill-progress-item">
+            <div class="skill-label"><span>C (CS50)</span> <span>30%</span></div>
+            <div class="progress"><div class="progress-bar" style="width:30%"></div></div>
+          </div>
+          <div class="skill-progress-item">
+            <div class="skill-label"><span>JavaScript</span> <span>10%</span></div>
+            <div class="progress"><div class="progress-bar" style="width:10%"></div></div>
           </div>
         </div>
+        <div class="col-md-6">
+          <div class="skill-progress-item">
+            <div class="skill-label"><span>Flask</span> <span>40%</span></div>
+            <div class="progress"><div class="progress-bar" style="width:40%"></div></div>
+          </div>
+          <div class="skill-progress-item">
+            <div class="skill-label"><span>SQL</span> <span>30%</span></div>
+            <div class="progress"><div class="progress-bar" style="width:30%"></div></div>
+          </div>
+          <div class="skill-progress-item">
+            <div class="skill-label"><span>CSS</span> <span>30%</span></div>
+            <div class="progress"><div class="progress-bar" style="width:30%"></div></div>
+          </div>
+          <div class="skill-progress-item">
+            <div class="skill-label"><span>Bootstrap</span> <span>05%</span></div>
+            <div class="progress"><div class="progress-bar" style="width:5%"></div></div>
+          </div>
+        </div>
+      </div>
+      <!-- also show simple tags for completeness -->
+      <div class="mt-5 d-flex flex-wrap gap-2">
+        <span class="skill-tag"><i class="fa-brands fa-python me-1"></i>Python</span>
+        <span class="skill-tag"><i class="fa-brands fa-js me-1"></i>JS</span>
+        <span class="skill-tag"><i class="fa-solid fa-flask me-1"></i>Flask</span>
+        <span class="skill-tag"><i class="fa-solid fa-database me-1"></i>SQL</span>
+        <span class="skill-tag"><i class="fa-brands fa-html5 me-1"></i>HTML5</span>
+        <span class="skill-tag"><i class="fa-brands fa-css3-alt me-1"></i>CSS</span>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS (3 cards) -->
-  <section id="projects" class="py-5" style="background: white;">
+  <section id="projects" class="py-5" style="background: #0a0c10;">
     <div class="container py-4">
-      <h2 class="section-title">Featured projects</h2>
+      <h2 class="section-title">Featured Projects</h2>
       <div class="row g-4">
         <!-- project 1 -->
         <div class="col-md-6 col-lg-4">
-          <div class="card project-card h-100">
-            <img src="https://placehold.co/600x400/0d6efd/white?text=Bible+Generator" class="card-img-top" alt="Flask blog project">
+          <div class="project-card">
+            <img src="https://placehold.co/600x400/1e293b/3b82f6?text=Bible+Generator" class="w-100" alt="Bible Verse Generator">
             <div class="card-body">
               <h5 class="card-title">Bible Verse Generator PRO</h5>
-              <p class="card-text text-secondary">A lightweight Bible Verse Generator engine That fetches verse with bible API. (HTML, CSS, JavaScript).</p>
-              <a href="https://www.github.com/jeremiahhappiness998-afk/Bible-verse-generator-ultimate-user-improved-" class="btn btn-sm btn-outline-primary rounded-pill">View project →</a>
+              <p class="text-secondary" style="color: #b0b8c5 !important;">Fetches verses with Bible API. (HTML, CSS, JavaScript).</p>
+              <a href="https://www.github.com/jeremiahhappiness998-afk/Bible-verse-generator-ultimate-user-improved-" class="btn btn-outline-primary rounded-pill">View project →</a>
             </div>
           </div>
         </div>
         <!-- project 2 -->
         <div class="col-md-6 col-lg-4">
-          <div class="card project-card h-100">
-            <img src="https://placehold.co/600x400/20c997/white?text=AD+BLOCKER" class="card-img-top" alt="JavaScript weather app">
+          <div class="project-card">
+            <img src="https://placehold.co/600x400/1e293b/8b5cf6?text=AD-BLOCKER" class="w-100" alt="AD Blocker">
             <div class="card-body">
-              <h5 class="card-title">AD-BLOCKER</h5>
-              <p class="card-text text-secondary">HGJ AD-Blocker PRO is an AD blocker that block ads based on Easy-lists elements in a script file called content.js, it blocks in element ads and ads on elements. (HTML, CSS, JS).</p>
-              <a href="https://github.com/jeremiahhappiness998-afk/CS50-Final-Project-" class="btn btn-sm btn-outline-primary rounded-pill">View project →</a>
+              <h5 class="card-title">AD-BLOCKER (HGJ PRO)</h5>
+              <p class="text-secondary" style="color: #b0b8c5 !important;">Blocks ads via EasyList rules. (HTML, CSS, JS, JSON).</p>
+              <a href="https://github.com/jeremiahhappiness998-afk/CS50-Final-Project-" class="btn btn-outline-primary rounded-pill">View project →</a>
             </div>
           </div>
         </div>
         <!-- project 3 -->
         <div class="col-md-6 col-lg-4">
-          <div class="card project-card h-100">
-            <img src="https://placehold.co/600x400/6f42c1/white?text=Portfolio+v1" class="card-img-top" alt="Portfolio design">
+          <div class="project-card">
+            <img src="https://placehold.co/600x400/1e293b/3b82f6?text=Portfolio+v1" class="w-100" alt="Developer Portfolio">
             <div class="card-body">
               <h5 class="card-title">Developer Portfolio</h5>
-              <p class="card-text text-secondary">Responsive personal portfolio with (dark/light toggle - (Future Enhancements)). (HTML, Bootstrap, CSS, JS).</p>
-              <a href="https://github.com/me50/jeremiahhappiness998-afk/tree/cs50/problems/2025/x/homepage" class="btn btn-sm btn-outline-primary rounded-pill">View project →</a>
+              <p class="text-secondary" style="color: #b0b8c5 !important;">Responsive personal portfolio (HTML, Bootstrap, CSS, JS).</p>
+              <a href="https://github.com/me50/jeremiahhappiness998-afk/tree/cs50/problems/2025/x/homepage" class="btn btn-outline-primary rounded-pill">View project →</a>
             </div>
           </div>
         </div>
@@ -371,21 +498,23 @@
     </div>
   </section>
 
-  <!-- CONTACT + FORM + SOCIAL + WHATSAPP (section) -->
-  <section id="contact" class="py-5" style="background: #f8fafc;">
+  <!-- CONTACT section with form & social -->
+  <section id="contact" class="py-5" style="background: #0f1217;">
     <div class="container py-4">
-      <h2 class="section-title">Let's connect</h2>
+      <h2 class="section-title">Let's Work Together</h2>
       <div class="row g-5">
-        <!-- left side: social + info -->
+        <!-- left side contact info (reference style) -->
         <div class="col-lg-5">
-          <h4 class="fw-semibold mb-3">Reach out directly</h4>
-          <p class="text-secondary mb-4">I'm open to collaborations, freelance work, or just a tech chat.</p>
-          <div class="contact-info mb-4">
-            <p><i class="fa-regular fa-envelope text-primary me-3"></i> <a href="mailto:jeremiahhappiness998@gmail.com">jeremiahhappiness998@gmail.com</a></p>
-            <p><i class="fa-brands fa-whatsapp text-success me-3"></i> <a href="https://wa.me/7060580045" target="_blank">+234 7060580045 (WhatsApp)</a></p>
-          </div>
-          <div class="mb-4">
-            <h5 class="mb-3">Find me on</h5>
+          <div class="info-card">
+            <h4 class="mb-3">Get in Touch</h4>
+            <p style="color: #b0b8c5;">If you have any questions or would like to work together, please fill out the form or use the contacts below. I do my best to respond within 1 business day.</p>
+            <div class="mt-4">
+              <p><i class="fa-regular fa-envelope text-accent me-3"></i> jeremiahhappiness998@gmail.com</p>
+              <p><i class="fa-brands fa-whatsapp text-accent me-3"></i> <a href="https://wa.me/7060580045" target="_blank" style="color: #b0b8c5;">+234 7060580045</a></p>
+              <p><i class="fa-solid fa-location-dot text-accent me-3"></i>Nigeria</p>
+            </div>
+            <hr>
+            <h5 class="mb-3">Social</h5>
             <div>
               <a href="https://www.youtube.com/jeremiahhappiness-c6d" target="_blank" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
               <a href="https://www.github.com/jeremiahhappiness998-afk" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
@@ -395,40 +524,33 @@
               <a href="mailto:jeremiahhappiness998@gmail.com" class="social-icon"><i class="fa-regular fa-envelope"></i></a>
             </div>
           </div>
-          <!-- quick response note -->
-          <div class="bg-white p-3 rounded-4 shadow-sm">
-            <i class="fa-regular fa-clock text-primary me-2"></i> typically replies within a few hours
-          </div>
         </div>
-        <!-- right side: form (FormSubmit) -->
+        <!-- right side form (FormSubmit) -->
         <div class="col-lg-7">
-          <div class="bg-white p-4 p-lg-5 rounded-5 shadow">
+          <div class="info-card">
             <h4 class="mb-4">Send a message</h4>
-            <form action="https://formsubmit.co/3822ef6c853033f4e368db746d0d1a78" method="POST" id="contactForm">
-              <!-- FormSubmit options -->
+            <form action="https://formsubmit.co/3822ef6c853033f4e368db746d0d1a78" method="POST">
               <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://jeremiahhappiness.vercel.app/?success=true"> <!-- replace with actual domain or use relative trick -->
+              <input type="hidden" name="_next" value="https://jeremiahhappiness.vercel.app/?success=true">
               <input type="hidden" name="_template" value="table">
-              <!-- honeypot spam filter -->
               <input type="text" name="_honey" style="display:none">
-              
+
               <div class="mb-3">
-                <label for="name" class="form-label fw500">Full name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+                <label class="form-label">Full name</label>
+                <input type="text" class="form-control" name="name" required>
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label fw500">Email address</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control" name="email" required>
               </div>
               <div class="mb-4">
-                <label for="message" class="form-label fw500">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                <label class="form-label">Message</label>
+                <textarea class="form-control" name="message" rows="4" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary w-100 rounded-pill py-3 fw600">📤 Send via email</button>
+              <button type="submit" class="btn btn-primary-custom">📤 Send via email</button>
             </form>
-            <!-- success message placeholder (detected by URL param) -->
             <div id="successAlert" class="alert-success-custom mt-3 text-center" style="display: none;">
-              <i class="fa-regular fa-circle-check me-2"></i> Thanks! Your message has been sent.
+              <i class="fa-regular fa-circle-check me-2"></i> Thanks! Message sent.
             </div>
           </div>
         </div>
@@ -439,43 +561,32 @@
   <!-- FOOTER -->
   <footer class="py-4">
     <div class="container text-center">
-      <p class="mb-2">&copy; 2026, HAPPINESS GODKNOWS JEREMAH – Web Developer. All rights reserved.</p>
+      <p class="mb-2">© 2026 HAPPINESS GODKNOWS JEREMIAH – Fullstack Engineer.</p>
       <p>
         <a href="#home" class="footer-link">Home</a> · 
         <a href="#about" class="footer-link">About</a> · 
         <a href="#projects" class="footer-link">Projects</a> · 
         <a href="#contact" class="footer-link">Contact</a>
       </p>
-      
     </div>
   </footer>
 
-  <!-- Floating WhatsApp button -->
-  <a href="https://wa.me/7060580045" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/7060580045" class="whatsapp-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
-  <!-- Bootstrap JS bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom JS: success message from URL parameter + smooth scroll (already handled by CSS) -->
   <script>
     (function() {
-      // show success alert if URL contains ?success=true
       const urlParams = new URLSearchParams(window.location.search);
       if (urlParams.has('success') && urlParams.get('success') === 'true') {
         const alertBox = document.getElementById('successAlert');
         if (alertBox) {
           alertBox.style.display = 'block';
-          // hide after 8 seconds
-          setTimeout(() => { alertBox.style.display = 'none'; }, 8000);
-          // remove parameter from URL without reload (optional)
-          const cleanUrl = window.location.pathname + window.location.hash;
-          window.history.replaceState({}, document.title, cleanUrl);
+          setTimeout(() => alertBox.style.display = 'none', 6000);
+          window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
         }
       }
-
-      // optional: close navbar on click (for mobile)
+      // close mobile menu on link click
       const navLinks = document.querySelectorAll('.nav-link');
       const navbarCollapse = document.querySelector('.navbar-collapse');
       navLinks.forEach(link => {
@@ -487,8 +598,5 @@
       });
     })();
   </script>
-
 </body>
-
 </html>
-
